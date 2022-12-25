@@ -63,22 +63,40 @@
                         <a href="" class="p-1">Work</a>
                         <a href="" class="p-1">Price</a>
                         <a href="" class="p-1">Contact</a>
-                        <a href="" class="dropdown p-1">DropDown
-                            <i class="fa fa-caret-down"></i>
-                            <div class="dropdown-content">
-                                <div class="mb-1">Link 1</div>
-                                <div class="mb-1">Link 2</div>
-                                <div class="mb-1">Link 3</div>
-                            </div>
-                        </a>
-                        <a class="search pr-1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <a href="" class="p-1" class="search">Search</a>
+                        <a class="search-icon pr-1"><i class="fa fa-search" aria-hidden="true"></i></a>
                     </div>
-                  </div>  
-               
-
-
+                </div>
             </nav>
+            <!--------MODAL SECTION ------->
+            <div class="w3-container modal-class">
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Learn
+                    W3.CSS</button>
 
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container modal-padding">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <div class="modal-header p-1">
+                                <p>Oh snap! We just showed you a modal..</p>
+                                <p>Because we can</p>
+                            </div>
+
+                            <div class="modal-container p-1">
+                                <p>Cool huh? Ok, enough teasing around..</p>
+
+                                <p>Go to our <a href="">W3.CSS Tutorial</a> to learn more!</p>
+                            </div>
+
+                            <div class="modal-footer p-1">
+                                <p> Modal footer</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -89,8 +107,8 @@
                 <p>Meet the team - our office rates:</p>
             </div>
             <br>
-            <div class="d-flex col-12 mt-1">
-                <div class="avatar d-flex flex-direction-col text-align-center col-3">
+            <div class="d-flex flex-wrap mt-1">
+                <div class="avatar d-flex flex-direction-col text-align-center col-12 col-l-3">
                     <div>
                         <img src="avatar.jpg" class="" alt="Alps">
                     </div>
@@ -98,7 +116,7 @@
                     <p>Web Designer</p>
                 </div>
 
-                <div class="avatar d-flex flex-direction-col text-align-center col-3">
+                <div class="avatar d-flex flex-direction-col text-align-center col-12 col-l-3">
                     <div>
                         <img src="avatar.jpg" class="" alt="Alps">
                     </div>
@@ -106,7 +124,7 @@
                     <p>Web Designer</p>
                 </div>
 
-                <div class="avatar d-flex flex-direction-col text-align-center col-3">
+                <div class="avatar d-flex flex-direction-col text-align-center col-12 col-l-3">
                     <div>
                         <img src="avatar.jpg" class="" alt="Alps">
                     </div>
@@ -114,7 +132,7 @@
                     <p>Web Designer</p>
                 </div>
 
-                <div class="avatar d-flex flex-direction-col text-align-center col-3">
+                <div class="avatar d-flex flex-direction-col text-align-center col-12 col-l-3">
                     <div>
                         <img src="avatar.jpg" class="" alt="Alps">
                     </div>
@@ -129,8 +147,8 @@
 
 
         <!--------OUR WORK SECTION ------->
-        <div class="d-flex col-12 our-work-section pt-64px pb-64px">
-            <div class="col-3 pl-1 pr-1">
+        <div class="d-flex flex-wrap col-12 our-work-section pt-64px pb-64px">
+            <div class="col-l-3 col-12 pl-1 pr-1">
                 <h2>Our Wrk</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet esse, cum rerum vel ipsum.
                     Unde, fugit! Consequuntur voluptas, porro voluptates quo ipsum cumque accusamus aut. Deserunt velit
@@ -139,7 +157,7 @@
                     dolores veritatis maxime adipisci cum!
                 </p>
             </div>
-            <div class="col-3 pl-1 pr-1">
+            <div class="col-l-3 col-12 pl-1 pr-1">
                 <div class="card">
                     <img src="snow.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
@@ -152,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 pl-1 pr-1">
+            <div class="col-l-3 col-12 pl-1 pr-1">
                 <div class="card">
                     <img src="lights.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
@@ -165,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 pl-1 pr-1">
+            <div class="col-l-3 col-12 pl-1 pr-1">
                 <div class="card">
                     <img src="mountains.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
@@ -180,18 +198,30 @@
             </div>
         </div>
         <!--------ADD BUTTON SECTION ------->
-        <div class="add-button-container">
-            <button class="add-button p-1">+</button>
-        </div>
 
+
+        <div class="add-button-slider-container">
+            <div class="add-button-slider w3-bar-block w3-border-right w3-xxlarge" style="display:none" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-xxlarge pb-3">Close &times;</button>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                <a href="#" class="w3-bar-item w3-button">Link 4</a>
+                <a href="#" class="w3-bar-item w3-button">Link 5</a>
+            </div>
+            <div class="add-btn">
+                <button class="w3-button w3-xlarge" onclick="w3_open()">+</button>
+
+            </div>
+        </div>
 
         <!--------PRICING SECTION ------->
         <div class="text-align-center pt-64px pb-64px">
             <h2>PRICING</h2>
             <p>Choose a pricing plan that fits your needs.</p>
             <br>
-            <div class="pricing-container col-12 d-flex">
-                <div class="col-4 pl-1 pr-1 pricing-col">
+            <div class="pricing-container flex-wrap col-12 d-flex row-gap-20">
+                <div class="col-l-4 col-12 pl-1 pr-1 pricing-col">
                     <ul>
                         <li class="list-title p-1">
                             <p class="font-size-24 ">Basic</p>
@@ -223,7 +253,7 @@
                     </ul>
                 </div>
 
-                <div class="col-4 pl-1 pr-1 pricing-col">
+                <div class="col-l-4 col-12 pl-1 pr-1 pricing-col">
                     <ul>
                         <li class="list-title second-col p-1">
                             <p class="font-size-24 ">Pro</p>
@@ -255,7 +285,7 @@
                     </ul>
                 </div>
 
-                <div class="col-4 pl-1 pr-1 pricing-col">
+                <div class="col-l-4 col-12  pl-1 pr-1 pricing-col">
                     <ul>
                         <li class="list-title p-1">
                             <p class="font-size-24 ">Premium</p>
@@ -292,8 +322,8 @@
 
         <!--------CONTACT US SECTION ------->
         <div class="contact-us">
-            <div class="col-12 d-flex">
-                <div class="col-5">
+            <div class="col-12 d-flex flex-wrap">
+                <div class="col-l-5 col-12">
                     <div class="pt-1 pb-1 ">
                         <span class="font-size-24">Contact Us</span>
                     </div>
@@ -306,7 +336,7 @@
                     <p><i class="fa fa-envelope-o" style="font-size:24px;"></i>&nbsp&nbsptest@test.com</p>
                 </div>
                 <!--------FORM SECTION ------->
-                <div class="col-7 form-section">
+                <div class="col-l-7 col-12 form-section">
                     <form action="" class="">
                         <div class="mt-1 mb-1">
                             <label for="name">Name</label>
@@ -354,6 +384,18 @@
             </div>
         </footer>
     </main>
+
+    <script>
+
+        function w3_open() {
+            console.log("FATEME");
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
